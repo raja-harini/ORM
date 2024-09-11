@@ -25,6 +25,18 @@ Execute Django admin and create details for 10 books
 ## PROGRAM
 
 ```
+admin.py
+
+from django.contrib import admin
+
+# Register your models here.
+from .models import bankloan,bankloanAdmin
+admin.site.register(bankloan,bankloanAdmin)
+```
+
+```
+models.py
+
 from django.db import models
 
 # Create your models here.
@@ -42,7 +54,6 @@ class bankloanAdmin(admin.ModelAdmin):
 
 ## OUTPUT
 
-Include the screenshot of your admin page.
 ![alt text](op.png)
 
 ## RESULT
